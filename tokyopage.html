@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>in tokyo</title>
+        <link href="./style.css" rel="stylesheet"/>
+        <style>
+            body, html {
+            height: 100vh;
+             width: 100vw;
+             padding: 0;
+             margin: 0;
+             /*overflow-y: hidden;*/
+             scroll-behavior: smooth;
+
+            }
+
+            a:active {
+             color: #FF5F1F;
+            }
+
+            a:visited {
+            color: #FF5F1F;
+            }
+
+            #title {
+            position: fixed;
+            width:100%;
+            top: 0;
+            left: 5px;
+            margin: 0;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            #go-back {
+            margin-right: 150px;
+            position: fixed;
+            bottom: 10px;
+            }
+
+            #go-back a{
+                padding: 14px 16px;
+                font-size: 2em;
+                font-weight: normal;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: dodgerblue;
+            }
+
+            #go-back a:hover{
+                color: blue;
+            }
+
+            .text-container {
+                position: absolute;
+                width:55%;
+                height: auto;
+                z-index: 999;
+
+                top: 15%;
+                left:20%;
+                
+                color: #4d2811;
+                word-break: keep-all;
+                font-size: 1.2em;
+                line-height:1.6;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .text-container a{
+                font-size: 1em;
+                color:#733107; 
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                cursor: pointer;
+            }
+
+            #page-medias {
+                position: relative;
+                display:inline-flexbox;
+                align-items: center;
+                max-width: 100%;
+                overflow-x: scroll;
+                margin-top: 200px;
+                margin-bottom: 150px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            #image-container img {
+                width:auto;
+                height: 300px;
+                margin-right: 30px;
+                margin-bottom: 5px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="title"><a href="" style="font-size:2em" >4 Chome-1-1 Miyoshi, Koto City, Tokyo 135-0022, Japan</a></h1>
+        
+        <main>
+            <div class="text-container">도희와 아름다운 가을 날씨의 도쿄. 여행의 주된 목적은 <a href="https://tokyoartbookfair.com/en/" target="_blank">Tokyo Art Book Fair</a> 관람.
+             두 시간 꽉 채워 '재밌게 잘 봤다'하고 나왔는데 알고 보니 북 페어 베뉴 지하에 우리가 본 면적만큼의 부스 공간이 남아 있었다.
+            </br></br>Ebisu에 있는 <a href="https://www.instagram.com/nadiff_apart_/?hl=en" target="_blank">Nadiff a/p/a/r/t</a> 아트 북 서점 2층에는 작은 전시장이 있다. 서점이 끝날 때 즈음 나가기 직전에 전시장을 쓱- 한 번 보려고 올라갔다가
+            졸지에 전시 작가님과 지인 세 분만의 작은 파티에 합류하게 되었다. 안 되는 일본어에 손짓 발짓을 보태어 작가님의 멋진 아트에 대해 이야기를 나누었다.
+            </div>
+
+            <div id="page-medias">
+                <div id="image-container">
+                    <img src="tokyo/img01.png">
+                </div>
+                
+                <div id="image-container">
+                    <img src="tokyo/img02.png">
+                </div>
+                
+                <div id="image-container">
+                    <img src="tokyo/img03.png">
+                </div>
+
+                <div id="image-container">
+                    <img src="tokyo/img04.png">
+                </div>
+
+                <div id="image-container">
+                    <img src="tokyo/img05.png">
+                </div>
+
+                <div id="image-container">
+                    <img src="tokyo/img06.png">
+                </div>
+
+                <div id="image-container">
+                    <img src="tokyo/img07.png">
+                </div>
+                
+                <div id="image-container">
+                    <img src="tokyo/img08.png">
+                </div>
+            </div>
+        
+        </main>
+            <!--<img id="image" src="tokyo/img01.png" alt="image">-->
+        
+
+        <footer id="go-back">
+                <a href="./index.html">&#8617;GO BACK TO THE MAP</a>
+        </footer>
+
+        <!--<script>
+            var image = document.getElementById("image");
+            var images = ["tokyo/img01.png","tokyo/img02.png","tokyo/img03.png","tokyo/img04.png","tokyo/img05.png"
+            "tokyo/img06.png","tokyo/img07.png","tokyo/img08.png","tokyo/img09.png","tokyo/img10.png"
+            ];
+            var index = 0;
+            
+            function updateImage(){
+                image.src = image[index];
+                index = (index + 1)% images.length;
+            }
+
+            setInterval(updateImage, 2000);
+        </script>-->
+    </body>
+    
+</html>
